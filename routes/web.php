@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\MiniGameController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [MiniGameController::class, 'start']);
+Route::post('/gameover', [MiniGameController::class, 'register']);
+Route::get('/result', [MiniGameController::class, 'result']);
