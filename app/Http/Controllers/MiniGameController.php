@@ -12,6 +12,9 @@ class MiniGameController extends Controller
     }
 
     public function register() {
+        // postメソッドかな
+        // 経過時間と名前を受け取って　サーバーに登録する。
+        // 登録したらリザルト画面に遷移させる。
         return 'テンプレートはないよ';
     }
 
