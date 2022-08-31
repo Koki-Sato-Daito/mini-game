@@ -6,9 +6,12 @@ use Illuminate\Http\Request;
 
 class MiniGameController extends Controller
 {
-    // 
     public function start() {
         return view('minigame.start');
+    }
+
+    public function name() {
+        return view('minigame.name');
     }
 
     public function register() {

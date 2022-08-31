@@ -16,5 +16,6 @@ use App\Http\Controllers\MiniGameController;
 */
 
 Route::get('/', [MiniGameController::class, 'start']);
+Route::get('/name', [MiniGameController::class,'name']);
 Route::post('/gameover', [MiniGameController::class, 'register']);
 Route::get('/result', [MiniGameController::class, 'result']);
